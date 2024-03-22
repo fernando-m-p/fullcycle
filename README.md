@@ -4,9 +4,11 @@
 
 ### O desafio foi fazer um projeto em que executando o comando de subir os containers suba:
 - Um container com um banco de dados
-- Um container com a aplicação Node/Javasript para mostrar: 
-- - <h1>Full Cycle Rocks!</h1>
-- - Lista de nomes cadastrada no banco de dados.
+- Um container com a aplicação Node/Javasript para mostrar:
+    -  ```html
+       <h1>Full Cycle Rocks!</h1>
+       Lista de nomes cadastrada no banco de dados.
+       ```
 - Um container com um Nginx como proxy reverso.
 
 
