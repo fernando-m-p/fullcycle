@@ -11,8 +11,6 @@ services:
     volumes: 
       - ./node:/usr/src/app
     tty: true
-    ports: 
-      - "3000:3000"
     depends_on: 
        - db
 
@@ -31,6 +29,17 @@ services:
       - node_network
     ports:
       - 3306:3306
+
+  nginx:
+    build: 
+      context: ./nginx
+      dockerfile: Dockerfile
+    image: fermope/nginx:prod
+    container_name: nginx
+    networks: 
+      - node_network
+    ports: 
+      - "8080:80"
 
 networks: 
   node_network:
